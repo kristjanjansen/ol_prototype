@@ -7,22 +7,9 @@ var utils = require("./js/utils")
 
 var config = require('config');
 
-/*
-var config = {
-  port: 8000,
-  dirRoot: '~/Sites/tmp/ol',
-  dirTextsIn: 'files/texts/in',
-  dirImagesIn: 'files/images/in',
-  dirImagesOut: 'files/images/out',
-  dirImagesInThumbnails: 'files/images/in/thumbnails',
-  dirPagesTemplates: 'files/pages/templates',
-  dirPagesWork: 'files/pages/work',
-}
-*/
-
 app.route('/config').json({
-  dirImagesOut: config.dirRoot + '/' +config.dirImagesOut, 
-  dirTextsIn: config.dirRoot + '/' +config.dirTextsIn, 
+  dirImagesOut: config.dirRoot + '/' + config.dirImagesOut, 
+  dirTextsIn: config.dirRoot + '/' + config.dirTextsIn, 
   dirPagesWork: config.dirRoot + '/' + config.dirPagesWork 
 })
 
