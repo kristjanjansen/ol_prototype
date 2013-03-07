@@ -1,35 +1,34 @@
-## Requirements
+### Requirements
 
-### Image toolkits
+#### Image toolkits
 
-#### On Debian/Ubuntu
+##### On Debian/Ubuntu
 
 ```
 apt-get install libexiv2 libexiv2-dev
 apt-get install imagemagick
-
 ```
 
-#### On OSX
+##### On OSX
 
 ```
 brew install pkg-config exiv2
 brew install imagemagick
 ```
 
-For other systems see [exiv2](http://www.exiv2.org/download.html) and (imagemagick)[http://www.imagemagick.org/script/binary-releases.php] download pages.
+For other systems see [exiv2](http://www.exiv2.org/download.html) and [imagemagick](http://www.imagemagick.org/script/binary-releases.php) download pages.
 
-### Node
+#### Node
 
 You need NodeJS and npm installed
 
-## Installation
+### Installation
 
 ```
 npm install
 ```
 
-## Configuration
+### Configuration
 
 Create file ```config/default.json``` with following contents (fill with your values):
 
@@ -55,9 +54,34 @@ Create file ```config/default.json``` with following contents (fill with your va
 }
 ```
 
-## Running
+### Run server
 
 ```
 node app
 ```
+
+### Generate sample data
+
+#### Sample images
+
+Generate images via SP or Flickr (make sure you have correct keys in config):
+
+```
+node js/images-generate-sp.js
+```
+or
+```
+node js/images-generate-flickr.js
+```
+
+#### Sample texts
+
+Run
+```
+node js/texts-generate.js
+```
+
+### Use with Adobe CS suite
+
+Run various scripts from ```jsx``` directory.
 
