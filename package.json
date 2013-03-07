@@ -1,0 +1,17 @@
+{
+  "name": "ol_prototype",
+  "version": "0.0.1",
+  "dependencies" : {
+    "boganipsum": "0.0.x",
+    "cheerio": "0.10.x",
+    "config": "0.4.x",
+    "each": "0.4.x",
+    "exiv2": "0.3.x",
+    "flickr": "0.1.x",
+    "glob": "3.1.x",
+    "imagemagick": "0.1.x",
+    "request": "2.12.x",
+    "rtf": "git://github.com/kristjanjansen/node-rtf#caa3052963",
+    "tako": "0.3.x" 
+  }
+}
